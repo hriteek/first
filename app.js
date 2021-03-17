@@ -1,7 +1,5 @@
+const second = require('./second/app');
 console.log('This is the child branch');
 
-module.exports = {
-    data: () => {
-        return 'its me hriteek';
-    },
-};
+let result = second.data();
+console.log(result);
